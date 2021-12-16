@@ -30,7 +30,7 @@ Route::post('/sort-tasks', [TaskController::class, 'updateSortedTasks'])->name('
 
 Route::get('/project/create', [TaskController::class, 'createProject'])->name('project.create');
 Route::post('/project/store', [TaskController::class, 'storeProject'])->name('project.store');
-Route::get('/project/view/{project}', [TaskController::class, 'createTaskByProject'])->name('project.view');
+Route::get('/project/view/{project}', [TaskController::class, 'viewTaskByProject'])->name('project.view');
 
 
 // Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

@@ -81,7 +81,7 @@ class TaskController extends Controller
         return Redirect()->route('task.index')->with('success', 'Project created successfully');
     }
 
-     public function createTaskByProject(Project $project)
+     public function viewTaskByProject(Project $project)
     {
         $data['tasks'] = $project->tasks;
     	$data['projects'] = Project::all();
